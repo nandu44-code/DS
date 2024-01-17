@@ -41,7 +41,24 @@ class SingleLinkedList:
                 print(pointer.data,'-->',end=' ')
                 pointer=pointer.next
 
-            
+    def middleElement(self):
+        if self.head is None:
+            print('linked list is empty')
+        else:
+            pointer1=self.head
+            pointer2=self.head
+            while pointer2.next:
+                print('1')
+                if pointer2.next.next is None:
+                    pointer2=pointer2.next
+                    
+                    print('middle element is',pointer1.next.data)
+                    break
+                else:
+                    pointer1=pointer1.next
+                    pointer2=pointer2.next.next
+                
+            print('middle element is',pointer1.data)
 
 
 l=SingleLinkedList()
@@ -53,8 +70,9 @@ for i in range(limit):
     value=int(input("Enter a value"))
     l.insert(value)
 l.display()
-print('/n')
-l.insetAtBeginning(20)
-l.display()
-l.insertAtEnd(30)
-l.display()
+# print('/n')
+# l.insetAtBeginning(20)
+# l.display()
+# l.insertAtEnd(30)
+# l.display()
+l.middleElement()
