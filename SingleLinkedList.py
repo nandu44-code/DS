@@ -28,6 +28,10 @@ class SingleLinkedList:
         n.next=self.head
         self.head=n
 
+    def insertAtEnd(self,value):
+        n=Node(value)
+        self.temp.next=n
+
     def display(self):
         if self.head is None:
             print('Linked list is empty')
@@ -50,5 +54,7 @@ for i in range(limit):
     l.insert(value)
 l.display()
 print('/n')
-l.insetatbeginning(20)
+l.insetAtBeginning(20)
+l.display()
+l.insertAtEnd(30)
 l.display()
