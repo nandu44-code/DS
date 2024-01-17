@@ -34,7 +34,7 @@ class SingleLinkedList:
 
             
 
-n=Node(10)
+
 l=SingleLinkedList()
 
 
