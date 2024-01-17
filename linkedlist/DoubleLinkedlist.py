@@ -26,6 +26,11 @@ class DoubleLinkedList:
         self.head.prev=n
         n.next=self.head
         self.head=n
+    def insertAtEnd(self,value):
+        n=Node(value)
+        self.temp.next=n
+        n.prev=self.temp
+        self.temp=n
     def reversePrint(self):
         pointer=self.temp
 
@@ -51,4 +56,6 @@ l.display()
 
 # l.reversePrint()
 l.insertAtBeginning(13)
+l.display()
+l.insertAtEnd(90)
 l.display()
