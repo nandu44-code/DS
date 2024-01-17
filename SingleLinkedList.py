@@ -8,7 +8,6 @@ class SingleLinkedList:
         self.head=None
         self.temp=None
 
-
     def insert(self,value):
         n=Node(value)
 
@@ -28,7 +27,7 @@ class SingleLinkedList:
         n=Node(value)
         n.next=self.head
         self.head=n
-        
+
     def display(self):
         if self.head is None:
             print('Linked list is empty')
