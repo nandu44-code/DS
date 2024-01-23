@@ -17,3 +17,5 @@ def quicksort(arr,low,high):
 arr=[6,3,2,4,1,7,8]
 quicksort(arr,0,len(arr)-1)
 print(arr)
+
+

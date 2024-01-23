@@ -1,6 +1,5 @@
 arr=[10,11,3,20,4,5,1]
 
-
 for i in range(len(arr)):
     min_index=i
     for j in range(i+1,len(arr)):

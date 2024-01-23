@@ -48,7 +48,6 @@ class SingleLinkedList:
             pointer1=self.head
             pointer2=self.head
             while pointer2.next:
-                print('1')
                 if pointer2.next.next is None:
                     pointer2=pointer2.next
                     
